@@ -1,30 +1,19 @@
 <script>
-	export let name;
+
+	import FadeInOut from './components/Transitions/FadeInOut.svelte';
+	import Blur from './components/Transitions/Blur.svelte';
+	import Fly from './components/Transitions/Fly.svelte';
+	import Slide from './components/Transitions/Slide.svelte';
+	import Scale from './components/Transitions/Scale.svelte';
+
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+<FadeInOut />
 
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+<Blur />
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
+<Fly />
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
+<Slide />
+
+<Scale />
