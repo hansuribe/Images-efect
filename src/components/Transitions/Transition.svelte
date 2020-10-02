@@ -30,36 +30,26 @@
         <img
           transition:slide={effect.params}
           src={landscape}
-          width="1280"
-          height="720"
           alt="dark souls landscape {effect.type}" />
       {:else if effect.type == 'scale'}
         <img
           transition:scale={effect.params}
           src={landscape}
-          width="1280"
-          height="720"
           alt="dark souls landscape" />
       {:else if effect.type == 'fly'}
         <img
           transition:fly={effect.params}
           src={landscape}
-          width="1280"
-          height="720"
           alt="dark souls landscape" />
       {:else if effect.type == 'fade'}
         <img
           transition:fade={effect.params}
           src={landscape}
-          width="1280"
-          height="720"
           alt="dark souls landscape" />
       {:else if effect.type == 'blur'}
         <img
           transition:blur={effect.params}
           src={landscape}
-          width="1280"
-          height="720"
           alt="dark souls landscape" />
       {/if}
     {/if}
@@ -75,5 +65,9 @@
     height: 720px;
   }
 
-  section img {position: absolute}
+  section img {
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+  }
 </style>
